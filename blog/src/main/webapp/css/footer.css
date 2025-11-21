@@ -1,0 +1,60 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 18 May, 2022, 10:48:26 PM
+    Author     : Stuti
+*/
+
+/*    Footer  */
+
+.footer h4{
+    text-align: center;
+}
+.copyright p{
+    text-align: center;
+    align-items: center;
+    
+}
+.social-icon{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    text-decoration: none
+    
+}
+.social-icon a{
+     height:60px;
+     width: 60px;
+     background-color: #ffcccc;
+    border-radius: 50px;
+    text-align:center;
+    text-decoration: none;
+    margin: 10px;
+    box-shadow: 1px 4px 2px 2px #adb5bd;
+    line-height: 60px;
+    
+}
+.social-icon a i{
+    transition : all 0.3s linear;
+}
+.social-icon a i{
+    transform: scale(1.6);
+}
+
+.fa-facebook-f{
+    color: #0099ff;
+}
+.fa-google{
+    color: coral;
+}
+.fa-linkedin-in{
+    color: #0097e6;
+}
+.fa-instagram{
+    color: #e84393;
+}
+
+
