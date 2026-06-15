@@ -1,5 +1,5 @@
 # Step 1: Build phase (Maven का इस्तेमाल करके प्रोजेक्ट बिल्ड करने के लिए)
-FROM maven:3.8.4-openjdk-17 AS build
+FROM maven:3.9.6-eclipse-temurin-17 AS build
 WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
