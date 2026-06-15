@@ -3,8 +3,8 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-FROM eclipse-temurin:17-jdk-jammy
-WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+FROM tomcat:9-jdk17-openjdk-slim
+RUN rm -rf /usr/local/tomcat/webapps/*
+COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["catalina.sh", "run"]
